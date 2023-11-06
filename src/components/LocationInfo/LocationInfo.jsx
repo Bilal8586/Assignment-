@@ -8,7 +8,7 @@ const LocationInfo = ({ postalCode,country }) => {
     const getData = async ()=>{
       setLoading(true);
       try {
-        const res = await axios.get(`http://api.zippopotam.us/${country}/${postalCode}`)
+        const res = await axios.get(`//api.zippopotam.us/${country}/${postalCode}`)
         setLocationInfo(res.data);
        setLoading(false);
        setError(null)
